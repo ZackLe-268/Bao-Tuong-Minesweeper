@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="!style.css">
+  <title> Báo tường về trò chơi dò mìn </title>
+</head>
+<body id="start">
+  <header>
+    <img src="bg1.png">
+  </header>
+  <div class="window">
+    <div class="title-bar">
+      <div><h1 id="gioithieu"> Giới Thiệu </h1></div>
+        <div class="title-buttons">
+          <button> _ </button>
+          <button> □ </button>
+          <button> X </button>
+        </div>
+    </div>
+    <div class="window-content">
+    <div class="content-row">
+    <div class="text"><p> Dò mìn hay gỡ bom (tiếng Anh: Minesweeper) là một trò chơi giải đố trên máy tính dành cho một người chơi. Trò chơi bao gồm một "bãi mìn" là những ô vuông có thể chứa "mìn", và người chơi cần phải dựa vào những con số thể hiện số mìn xung quanh để mở hết tất cả những ô vuông trống mà không kích nổ quả mìn nào. Trò chơi được xây dựng như một chương trình giải trí cài đặt trên hệ điều hành Microsoft Windows. Ngoài Windows, trò chơi còn có trong Linux (như KMines (giao diện KDE) và gnomine (giao diện GNOME). Nhờ quy luật đơn giản, nhiều biến thể của trò chơi cũng được phát hành như Dò mìn 3D, Minesweeper X, và Crossmines. </p>
+      <p>Nguồn gốc của trò chơi dò mìn là chưa rõ. Theo TechRadar, phiên bản đầu tiên của dò mìn là Microsoft Minesweeper năm 1990, nhưng Eurogamer cho rằng Mined-Out của Ian Andrew năm 1983 mới là bản đầu tiên. </p> </div>
+    <div>
+      <img src="mnswpr.png" height="256" alt="Hình ảnh không thể hiển thị">
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="window">
+    <div class="title-bar">
+      <div><h1 id="cachchoi"> Cách Chơi </h1></div>
+        <div class="title-buttons">
+          <button> _ </button>
+          <button> □ </button>
+          <button> X </button>
+        </div>
+      </div>
+      <div class="window-content">
+        <h2> Mục Tiêu: </h2>
+        <p> Trong Dò mìn, người chơi phải mở được tất cả các ô không có mìn trên một bảng ô vuông, đồng thời không được kích nổ bất cứ một quả mìn nào. Trò chơi được xếp hạng bằng thời gian hoàn thành, vì vậy việc hoàn thành trò chơi trong thời gian sớm nhất cũng là một mục tiêu quan trọng đối với người chơi đã thành thạo. </p>
+        <h2> Luật Chơi: </h2>
+        <ul>
+          <li> Người chơi khởi đầu với một bảng ô vuông trống thể hiện "bãi mìn". </li>
+          <li> Click chuột vào một ô vuông trong bảng. Nếu không may trúng phải ô có mìn (điều này thường xảy ra với người mới chơi) thì trò chơi kết thúc. Ngược lại, nếu ô đó không có mìn, một vùng các ô sẽ được mở ra cùng với những con số. Số trên một ô là lượng mìn trong 8 ô nằm quanh với ô đó. </li>
+          <li> Nếu chắc chắn một ô có mìn, người chơi có thể đánh dấu vào ô đó với hình lá cờ bằng cách click chuột phải. </li>
+          <li> Nếu những ô lân cận của một ô đã có đủ số mìn mà vẫn còn các ô trống khác thì những ô đó không có mìn. </li>
+          <li> Trò chơi kết thúc với phần thắng dành cho người chơi nếu mở được tất cả các ô không có mìn. </li>
+        </ul>
+          <h2> Chiến Thuật: </h2>
+          <p> Trò chơi chia làm năm cấp độ: </p>
+          <ul>
+            <li> Dễ (Beginner): bảng ô vuông 8 × 8 (9 × 9 từ bản Microsoft Windows XP trở đi) trên đó rải 10 quả mìn </li>
+            <li> Trung bình (Intermediate): bảng ô vuông 16 × 16 trên đó rải 40 quả mìn </li>
+            <li> Khó (Expert): bảng ô vuông 30 × 16 trên đó rải 99 quả mìn </li>
+          </ul>
+        <div class="content-row">  
+          <div class="text">
+          <p> Ngoài ra còn có phần tùy chọn cho phép người chơi tự chọn kích thước bảng và số mìn. </p>
+          <p> Người chơi được cho biết thêm số mìn còn lại trên bảng, được tính bằng cách lấy số mìn ban đầu trừ đi số lá cờ đã đặt (số mìn có thể hiển thị là số âm nếu người chơi đặt quá nhiều lá cờ). </p>
+          <p> Trong một số phiên bản của Dò mìn, nếu người chơi đã đánh dấu với lá cờ đủ số mìn quanh một ô số, người chơi có thể click chuột vào ô số đó để mở hết tất cả những ô trống còn lại chưa mở nhằm tăng tốc độ chơi, thủ thuật này được gọi là mở một loạt (tiếng Anh: chording) (điều này không ngăn chặn người chơi đánh dấu sai và kích nổ mìn). </p>
+          <p> Đa số những phiên bản của trò chơi sẽ đảm bảo rằng ô đầu tiên người chơi mở ra sẽ không có mìn để tránh việc kết thúc trò chơi quá sớm, một số phiên bản khác mở thêm những ô xung quanh nó để hỗ trợ người mới chơi tiếp tục. Vì vậy, việc mở ô đầu tiên tại vị trí nào trên bảng sẽ ảnh hưởng đến tiến độ chơi của người chơi. </p>
+          </div>
+          <div>
+            <img class="il" src="mnswpr_bgnr.gif" alt="Hình ảnh không thể hiển thị">
+          </div>
+        </div>
+          <h2> Tính Chất: </h2>
+          <ul>
+            <li> Tính logic: Trò chơi dựa trên cơ sở tính toán sự phân phối (trong không gian) các quả mìn dựa trên dữ kiện là các con số hiện ra (chỉ số lượng quả mìn kề với một ô). </li>
+            <li> Tính ngẫu nhiên: Trong một số trường hợp, không thể xác định chính xác vị trí của mìn chỉ dựa vào những con số gợi ý; do đó trò chơi mang tính may rủi. Bên cạnh đó, một số người chơi còn thắng trực tiếp ngay với 1 click chuột đối với những ván có số lượng mìn thưa thớt (đặc biệt trong trình độ Beginner - dễ). </li>
+          </ul>         
+      </div>
+    </div>    
+  </div>
+  <div class="window">
+    <div class="title-bar">
+      <div><h1 id="meo"> Mẹo </h1></div>
+        <div class="title-buttons">
+          <button> _ </button>
+          <button> □ </button>
+          <button> X </button>
+        </div>
+      </div>
+      <video src="Minesweeper_Patterns_Guide.mp4" controls>Video không thể hiển thị</video>
+    </div>    
+  </div>
+  <div class="window">
+    <div class="title-bar">
+      <div><h1 id="choi"> Chơi </h1></div>
+        <div class="title-buttons">
+          <button> _ </button>
+          <button> □ </button>
+          <button> X </button>
+        </div>
+      </div>
+      <iframe src="https://minesweeper.online" height="600"></iframe>
+    </div>    
+  </div>
+  <div class="window">
+    <div class="title-bar">
+      <div><h1 id="danhgia"> Đánh Giá </h1></div>
+        <div class="title-buttons">
+          <button> _ </button>
+          <button> □ </button>
+          <button> X </button>
+        </div>
+      </div>
+      <div class="window-content">
+      <div class="content-row">
+      <div class="text">
+      <form action="!submit.php">
+        <p>Họ và Tên: <input type="text" name="hoten"></p>
+        <p>Địa chỉ Email: <input type="text" name="email"></p>
+        <p> Bạn cảm thấy thế nào sau khi xem qua trang web này? </p>
+        <textarea name="binhluan" rows="8" cols="64"></textarea> 
+        <p> Bạn đã hiểu cách chơi Minesweeper chưa? </p>
+        <input type="radio" name="radio1" value="dahieu"> Đã hiểu
+        <input type="radio" name="radio1" value="chuahieu"> Chưa hiểu lắm
+        <input type="radio" name="radio1" value="khonghieu"> Không hiểu
+        <p> Bạn có thấy trò chơi Minesweeper thú vị hay không? </p>
+        <input type="radio" name="radio2" value="ratthuvi"> Rất thú vị
+        <input type="radio" name="radio2" value="thuvi"> Thú vị
+        <input type="radio" name="radio2" value="khongykien"> Không ý kiến
+        <input type="radio" name="radio2" value="tam"> Tạm được
+        <input type="radio" name="radio2" value="khong"> Không thú vị
+        <p> Cảm ơn bạn đã góp ý! </p>
+        <input type="submit" name="ketthuc" value="Gửi">
+      </form>
+      </div>
+      <div>
+      <img src="smile.gif" width="480">
+      </div>
+      </div>
+    </div>
+    </div> 
+  <footer>
+    <div class="title-bar">
+      <div><h1 id="nguon"> Nguồn </h1></div>
+        <div class="title-buttons">
+          <button> _ </button>
+          <button> □ </button>
+          <button> X </button>
+        </div>
+      </div>
+      <div class="window-content">
+        <div class="content-row">
+        <div class="text">
+        <p><b> Trang web được tạo bởi: </b></p>
+        <div class="avatar">
+          <img src="avatar.png" alt="avatar">
+          <span>Lê Quang Khánh Tuấn 12.08 (NK 2023-2026)</span>
+        </div>
+        <p><b>Thông tin liên hệ: </b></p>
+          <ul>
+            <li>
+              <img class="icon2" src="Discord-icon-svgrepo-com.png" alt="Discord">
+              <span> @zackle268 </span>
+            </li>
+            <li>
+              <img class="icon2" src="2023_Facebook_icon.svg.png" alt="Facebook">
+              <a href="https://www.facebook.com/zackle268" target="_blank"> Zack Lê </a>
+            </li>
+            <li>
+              <img class="icon2" src="Gmail_icon_(2020).svg.png" alt="Email">
+              <span> zackle0268@gmail.com </span>
+            </li>
+            <li>
+              <img class="icon2" src="Icon_of_Zalo.svg.png" alt="Zalo">
+              <span> 0349746433 </span>
+            </li>
+          </ul>
+        <p><b> Tất cả nội dung và ý tưởng của web được lấy từ: </b></p>
+          <ul>
+            <li>
+              <img class="icon2" src="Wikipedia_Logo_1.0.png" alt="Wikipedia">
+              <a href="https://en.wikipedia.org/wiki/Minesweeper_(video_game)" target="_blank"> Wikipedia </a>
+            </li>
+            <li>
+              <img class="icon2" src="ChatGPT-Logo.png" alt="ChatGPT">
+              <a href="https://chatgpt.com/" target="_blank"> ChatGPT </a>
+            </li>
+            <li>
+              <img class="icon2" src="YouTube_full-color_icon.png" alt="Youtube">
+              <a href="https://www.youtube.com/" target="_blank"> Youtube </a>
+            </li>
+            <li>
+              <img class="icon2" src="Minesweeper_Online.png" alt="Minesweeper">
+              <a href="https://minesweeper.online" target="_blank"> Minesweeper.online </a>
+            </li>
+            <li>
+              <img class="icon2" src="WINVE001.png" alt="PixelOS">
+              <a href="https://pixel-os.framer.website/" target="_blank"> PixelOS </a>
+            </li>
+          </ul>
+        <p><b> Ngày cập nhật gần nhất: </b><mark> 18:04 21/02/2026 </mark></p>
+        </div>
+        <img src="agnes-tachyon-uma-musume.gif" alt="Agnes Tachyon" height="450">
+        </div>
+      </div>
+    </div>    
+  </footer>
+  <div class="taskbar">
+    <div class="left">
+      <div class="start-button">
+        <img src="Windows_logo_-_1992.svg.png" width="20">
+        <a href="#start"><b> Start </b></a>
+      </div>
+      <div class="icon-button">
+        <a href="#gioithieu"> Giới Thiệu </a>
+      </div>
+      <div class="icon-button">
+        <a href="#cachchoi"> Cách Chơi </a>
+      </div>
+      <div class="icon-button">
+        <a href="#meo"> Mẹo </a>
+      </div>
+      <div class="icon-button">  
+        <a href="#choi"> Chơi </a>
+      </div>
+      <div class="icon-button">
+        <a href="#danhgia"> Đánh Giá </a>
+      </div>
+      <div class="icon-button">  
+        <a href="#nguon"> Nguồn </a>
+      </div>
+    </div>
+    <div class="clock">03:00 AM</div>
+  </div>
+</body>
+</html>
